@@ -4,7 +4,8 @@ RUN groupadd --gid 1000 node \
   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node
 
 
-#node install taken from official image https://github.com/nodejs/docker-node/blob/170ed2092d4925971f9cd3ad5dfc416e820f90fd/10/stretch/Dockerfile
+#node install taken from official image 
+#https://github.com/nodejs/docker-node/blob/170ed2092d4925971f9cd3ad5dfc416e820f90fd/10/stretch/Dockerfile
 ENV NODE_VERSION=10.15.1
 
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" \
